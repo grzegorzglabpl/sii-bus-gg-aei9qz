@@ -1,0 +1,232 @@
+/* reset elements */
+*,
+*::after,
+*::before {
+  position: static;
+  box-sizing: border-box;
+  box-shadow: none;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  opacity: 1;
+  overflow: hidden;
+  float: none;
+  clear: none;
+  font-family: inherit;
+  font-size: inherit;
+  text-align: inherit;
+  width: auto;
+  height: auto;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  word-wrap: inherit;
+  line-height: inherit;
+  color: inherit;
+  appearance: none;
+  content: none;
+  word-break: normal;
+  text-overflow: clip;
+}
+
+/* :root element, base settings */
+html {
+  display: block;
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: auto;
+  font-family: system, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 100%;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2em;
+  letter-spacing: 0.05em;
+  word-spacing: 0.1em;
+  text-align: left;
+  color: rgba(51, 102, 153, 1);
+  background: rgba(255, 255, 255, 1);
+}
+
+/* default hidden html5 elements */
+head,
+title,
+meta,
+link,
+style,
+script,
+dialog,
+template,
+menu,
+*[hidden] {
+  display: none;
+}
+
+*[disabled] {
+  cursor: not-allowed;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+img:not([src]),
+img[src=""] {
+  content: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 200;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
+
+section#root {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+}
+
+section#root > header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20vh;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(51, 102, 153, 1);
+  /*
+  background-size: 10vh 10vh;
+  background: url("https://sii.pl/wp-content/themes/sii-sage/resources/assets/images/logo-sii.png")
+    no-repeat top left;*/
+}
+
+.NaglowekStrony {
+  text-align: center;
+}
+
+.NaglowekStrony a {
+  text-decoration: none;
+}
+
+section#root > header > h1 {
+  text-align: center;
+  font-size: 4rem;
+  line-height: 2;
+}
+
+section#root > main {
+  min-height: 200vh;
+  padding-top: 25vh;
+  margin: auto;
+  width: 80vw;
+}
+
+section#root > nav {
+  position: absolute;
+  top: 20vh;
+  left: 0;
+  right: 0;
+  height: 20vh;
+}
+
+section#root > footer {
+  margin-top: 4rem;
+  bottom: 0;
+  height: 10vh;
+  background-color: rgba(51, 102, 153, 1);
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+}
+
+input,
+select {
+  width: auto;
+  border: 1px solid rgba(51, 102, 153, 0.5);
+}
+
+form {
+  border: 1px solid rgba(51, 102, 153, 1);
+  margin-top: 2rem;
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  border: 1px solid rgba(51, 102, 153, 1);
+  border-radius: 0.5rem;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(51, 102, 153, 0.8);
+  padding: 0.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+select,
+input {
+  margin-right: 2rem;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active {
+  background-color: rgba(51, 102, 153, 1);
+}
+
+fieldset {
+  border-top: 2px solid rgba(51, 102, 153, 1);
+  padding: 2rem;
+}
+legend {
+  margin: 1rem 0 0 1rem;
+}
+label {
+  margin-right: 1rem;
+}
+
+input[type="checkbox"] {
+  border: 2px solid rgba(51, 102, 153, 1);
+  border-radius: 0.2rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+input[type="checkbox"]:checked {
+  border: 2px solid rgba(255, 255, 255, 1);
+  background-color: rgba(51, 102, 153, 1);
+  border-radius: 0.2rem;
+  outline: 2px solid rgba(51, 102, 153, 1);
+}
